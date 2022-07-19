@@ -8,7 +8,6 @@ import { Card } from "./componenets/Card";
 const App = () => {
   const [jsonData, setJsonData] = useState();
 
-
   async function getData(str) {
     const response = await fetch(
       `https://www.googleapis.com/books/v1/volumes?q=${usersSearch}`
@@ -18,9 +17,7 @@ const App = () => {
 
   return (
     <div>
-      <Header search={getData}
-      
-       />
+      <Header search={getData} />
       <br />
       <Card />
       <br />
