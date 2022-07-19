@@ -14,12 +14,9 @@ export function Card(props) {
         ></div>
         <ul>
           {}
-          <a href="./GoToAuthor">
-            <li>{props.authorName || "Author Name"}</li>
-          </a>
-          <a href="./GoToTitle">
-            <li>{props.titleName || "Title Name"}</li>
-          </a>
+          <li>{props.authorName || "Author Name"}</li>
+
+          <li>{props.titleName || "Title Name"}</li>
         </ul>
       </div>
       bro this is card
