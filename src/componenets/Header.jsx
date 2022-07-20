@@ -4,7 +4,6 @@ import requestOptions from "../services/requestOptions";
 
 export function Header(props) {
   const [usersSearch, setUsersSearch] = useState("");
-  const [jsonData, setJsonData] = useState([]);
 
   return (
     <>
@@ -17,7 +16,7 @@ export function Header(props) {
       <br />
       <button
         onClick={() => {
-          props.search(jsonData);
+          props.search(usersSearch);
         }}
       >
         search
