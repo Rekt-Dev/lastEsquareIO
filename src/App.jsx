@@ -4,12 +4,12 @@ import "./App.css";
 import { Header } from "./componenets/Header";
 import { Card } from "./componenets/Card";
 //import requestOptions from "./services/requestOptions"
-const MockCard = (props) => {
+/* const MockCard = (props) => {
   return (
     <div>{JSON.stringify(props.item.volumeInfo.imageLinks.thumbnail)}</div>
   );
 };
-const App = () => {
+ */ const App = () => {
   const [jsonData, setJsonData] = useState();
 
   async function getData(usersSearch) {
