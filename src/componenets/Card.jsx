@@ -3,7 +3,7 @@ export function Card(props) {
     <>
       <div className="centered">
         <img
-          width="150rem"
+          width="140rem"
           height="30%"
           alt=" Book Title"
           src={props.item.volumeInfo.imageLinks.thumbnail}

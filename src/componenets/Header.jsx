@@ -18,18 +18,14 @@ export function Header(props) {
       <br />
 
       <button
-        className=""
+        className="center"
         onClick={() => {
           props.search(usersSearch);
         }}
       >
         search
       </button>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+
       <br />
       <br />
     </div>
