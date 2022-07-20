@@ -5,7 +5,7 @@ import { Header } from "./componenets/Header";
 import { Card } from "./componenets/Card";
 //import requestOptions from "./services/requestOptions"
 const MockCard = (props) => {
-  return <div>{JSON.stringify(props.item.volumeInfo)}</div>;
+  return <div>{JSON.stringify(props.item.volumeInfo.imageLinks.thumbnail)}</div>;
 };
 const App = () => {
   const [jsonData, setJsonData] = useState();
@@ -18,16 +18,18 @@ const App = () => {
   }
 
   return (
-    <div>
+    <div className="">
       <Header search={getData} />
       <br />
       <div>
-        {jsonData
-          ? jsonData.items.map((singleBook, index) => (
-              <MockCard key={index} item={singleBook} />
-            ))
-          : "Nada to show"}
-      </div>
+{jsonData
+  ? jsonData.items.map((singleBook, index) => (
+      <Card key={index} item={singleBook} />
+    ))
+  : "Nada to show"}
+</div>)
+
+
       <br />
     </div>
   );

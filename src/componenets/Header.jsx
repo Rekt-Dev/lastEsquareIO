@@ -1,12 +1,11 @@
 import { useState } from "react";
-import { getData } from "../App";
 import requestOptions from "../services/requestOptions";
 
 export function Header(props) {
   const [usersSearch, setUsersSearch] = useState("");
 
   return (
-    <>
+    <div className="center">
       <input
         onChange={(e) => setUsersSearch(e.target.value)}
         type={"text"}
@@ -15,12 +14,13 @@ export function Header(props) {
 
       <br />
       <button
+        className="center"
         onClick={() => {
           props.search(usersSearch);
         }}
       >
         search
       </button>
-    </>
+    </div>
   );
 }
