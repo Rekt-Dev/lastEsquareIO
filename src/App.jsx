@@ -26,7 +26,7 @@ const App = () => {
           ? jsonData.items.map((singleBook, index) => (
               <MockCard key={index} item={singleBook} />
             ))
-          : "No data to show"}
+          : "Nada to show"}
       </div>
       <br />
     </div>
