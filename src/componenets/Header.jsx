@@ -1,5 +1,4 @@
 import { useState } from "react";
-import requestOptions from "../services/requestOptions";
 
 export function Header(props) {
   const [usersSearch, setUsersSearch] = useState("");

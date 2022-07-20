@@ -1,10 +1,13 @@
-
 export function Card(props) {
- 
   return (
     <>
       <div className="centerקג">
-        <img width="20%" height="30%" alt=" Book Title" src={props.item.volumeInfo.imageLinks.thumbnail} />
+        <img
+          width="10%"
+          height="30%"
+          alt=" Book Title"
+          src={props.item.volumeInfo.imageLinks.thumbnail}
+        />
         <div
           className=""
           style={{ backgroundColor: "rgba(251, 251, 251, 0.2)" }}
