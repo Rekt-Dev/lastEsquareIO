@@ -10,7 +10,7 @@ const MockCard = (props) => {
 const App = () => {
   const [jsonData, setJsonData] = useState();
 
-  async function getData(str) {
+  async function getData(usersSearch) {
     const response = await fetch(
       `https://www.googleapis.com/books/v1/volumes?q=${usersSearch}`
     );
