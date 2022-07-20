@@ -15,7 +15,7 @@ export function Header(props) {
       />
 
       <br />
-      <button onClick={() => {}}>props.search(data)</button>
+      <button>SEARCH...</button>
     </>
   );
 }

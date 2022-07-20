@@ -19,7 +19,6 @@ export function Card(props) {
           <li>{props.titleName || "Title Name"}</li>
         </ul>
       </div>
-      bro this is card
     </>
   );
 }
