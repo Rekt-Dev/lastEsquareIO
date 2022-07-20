@@ -30,7 +30,7 @@ import { Card } from "./componenets/Card";
             ))
           : "Nada to show"}
       </div>
-      )
+
       <br />
     </div>
   );

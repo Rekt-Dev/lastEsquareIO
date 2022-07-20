@@ -12,14 +12,26 @@ export function Header(props) {
       />
 
       <br />
+      <br />
+      <br />
+      <br />
+      <br />
+
       <button
-        className="center"
+        className=""
         onClick={() => {
           props.search(usersSearch);
         }}
       >
         search
       </button>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
     </div>
   );
 }
