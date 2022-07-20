@@ -23,7 +23,7 @@ const App = () => {
     <div className="center">
       <Header search={getData} />
       <br />
-      <div>
+      <div className="center">
         {jsonData
           ? jsonData.items.map((singleBook, index) => (
               <Card key={index} item={singleBook} />

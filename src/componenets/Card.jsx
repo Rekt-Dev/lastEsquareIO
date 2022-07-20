@@ -1,15 +1,15 @@
 export function Card(props) {
   return (
     <>
-      <div className="centerקג">
+      <div className="centered">
         <img
-          width="10%"
+          width="150rem"
           height="30%"
           alt=" Book Title"
           src={props.item.volumeInfo.imageLinks.thumbnail}
         />
         <div
-          className=""
+          className="center"
           style={{ backgroundColor: "rgba(251, 251, 251, 0.2)" }}
         ></div>
         <ul>
