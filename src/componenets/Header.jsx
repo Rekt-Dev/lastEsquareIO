@@ -15,7 +15,13 @@ export function Header(props) {
       />
 
       <br />
-      <button>SEARCH...</button>
+      <button
+        onClick={() => {
+          props.search(text);
+        }}
+      >
+        search
+      </button>
     </>
   );
 }
