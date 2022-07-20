@@ -5,7 +5,7 @@ import { Header } from "./componenets/Header";
 import { Card } from "./componenets/Card";
 //import requestOptions from "./services/requestOptions"
 const MockCard = (props) => {
-  return <div>{JSON.stringify(props.item)}</div>;
+  return <div>{JSON.stringify(props.item.volumeInfo)}</div>;
 };
 const App = () => {
   const [jsonData, setJsonData] = useState();

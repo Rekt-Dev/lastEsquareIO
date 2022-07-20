@@ -14,7 +14,7 @@ export function Card(props) {
         ></div>
         <ul>
           {}
-          <li>{props.authorName || "Author Name"}</li>
+          <li>{props.items || "Author Name"}</li>
 
           <li>{props.titleName || "Title Name"}</li>
         </ul>
