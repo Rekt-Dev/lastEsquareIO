@@ -7,7 +7,7 @@ export function Header(props) {
     <>
       <div className="center">
         <input
-          onChange={(e) => setUsersSearch(e.target.value)}
+          onChange={(e) => setUsersSearch(e.target.value.trim())}
           type={"text"}
           placeholder={"Enter Your Search Here..."}
         />
@@ -19,9 +19,10 @@ export function Header(props) {
         <br />
       </div>
       <button
+        disabled={!usersSearch}
         className=""
         onClick={() => {
-          props.search(usersSearch);
+          props.search(usersSearch.trim());
         }}
       >
         search
