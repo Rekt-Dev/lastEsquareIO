@@ -14,9 +14,9 @@ export function Card(props) {
         ></div>
         <ul>
           {}
-          <li>{props.item.volumeInfo.authors || "Author Name"}</li>
+          <li>Artist: {props.item.volumeInfo.authors || "Author Name"}</li>
 
-          <li>{props.item.volumeInfo.title || "Title Name"}</li>
+          <li>Title: {props.item.volumeInfo.title || "Title Name"}</li>
         </ul>
       </div>
     </>

@@ -16,18 +16,18 @@ export function Header(props) {
       <br />
       <br />
       <br />
-
+      <br />
+      <br />
+      <br />
+      <br />
       <button
-        className="centered"
+        className=""
         onClick={() => {
           props.search(usersSearch);
         }}
       >
         search
       </button>
-
-      <br />
-      <br />
     </div>
   );
 }
