@@ -1,12 +1,15 @@
+
+
 export function Card(props) {
+  
   function dataOrDefault() {
     const defaultLink =
       "https://books.google.co.il/googlebooks/images/no_cover_thumb.gif";
-    const imgProp = props.item.volumeInfo.imageLinks.thumbnail;
 
-    if (imgProp) {
-      return imgProp;
-    } else return defaultLink;
+    if (props.item.volumeInfo.imageLinks) {
+      return props.item.volumeInfo.imageLinks.thumbnail;
+    } 
+    else return defaultLink;
   }
 
   return (
