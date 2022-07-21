@@ -3,18 +3,20 @@ export function Card(props) {
     <>
       <div className="centered">
         <img
-          width="140rem"
-          height="30%"
           alt=" Book Title"
           src={props.item.volumeInfo.imageLinks.thumbnail}
-        />{" "}
-        : "https://books.google.co.il/googlebooks/images/no_cover_thumb.gif"
+          onError={(e) => {
+            e.target.onerror = null;
+            e.target.src = "no_cover_thumb.gif";
+          }}
+        />
+
         <div
+          numberOfLines={1}
           className="center"
-          style={{ backgroundColor: "rgba(251, 251, 251, 0.2)" }}
+          style={{ backgroundColor: "rgba(251, 251, 1, 0.2)" }}
         ></div>
         <ul>
-          {}
           <li numberOfLines={1} ellipsizeMode="tail">
             Author: {props.item.volumeInfo.authors || "Author Name"}
           </li>
