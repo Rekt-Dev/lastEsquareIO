@@ -3,9 +3,9 @@ export function Card(props) {
     <>
       <div className="centered">
         <img
-          width="140rem"
+          /*   width="140rem"
           height="30%"
-          alt=" Book Title"
+          alt=" Book Title" */
           src={props.item.volumeInfo.imageLinks.thumbnail}
         />
         <div
@@ -14,7 +14,7 @@ export function Card(props) {
         ></div>
         <ul>
           {}
-          <li>Artist: {props.item.volumeInfo.authors || "Author Name"}</li>
+          <li>Author: {props.item.volumeInfo.authors || "Author Name"}</li>
 
           <li>Title: {props.item.volumeInfo.title || "Title Name"}</li>
         </ul>
