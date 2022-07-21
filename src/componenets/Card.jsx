@@ -17,7 +17,7 @@ export function Card(props) {
           style={{ backgroundColor: "rgba(251, 251, 1, 0.2)" }}
         ></div>
         <ul>
-          <li numberOfLines={1} ellipsizeMode="tail">
+          <li numberOfLines={0} ellipsizeMode="tail">
             Author: {props.item.volumeInfo.authors || "Author Name"}
           </li>
 
