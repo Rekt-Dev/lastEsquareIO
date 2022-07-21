@@ -1,9 +1,8 @@
 export function Card(props) {
   function dataOrDefault() {
-    
     function truncate(str) {
       return str.length > 10 ? str.substring(0, 7) + "..." : str;
-  }
+    }
     const defaultLink =
       "https://books.google.co.il/googlebooks/images/no_cover_thumb.gif";
 
@@ -13,14 +12,15 @@ export function Card(props) {
   }
 
   return (
-    <div className="centered" resizeMode="cover" borderRadius={20}>
+    <div className="" resizeMode="cover" borderRadius={20}>
       <img
         className="rounded-top"
-
+        width="200px"
+        height="300px"
         resizeMode="cover"
         borderRadius={20}
         alt=" Book Title"
-        style={{overflow: 'hidden', textOverflow: 'ellipsis'}}
+        style={{ overflow: "hidden", textOverflow: "ellipsis" }}
         src={dataOrDefault()}
       />
 
@@ -30,13 +30,23 @@ export function Card(props) {
         className="truncate"
         style={{ backgroundColor: "rgba(251, 251, 1, 0.2)" }}
       ></div>
-        <p numberOfLines={1} ellipsizemode="tail" className="truncate" maxlength="4" >
-          Author: {props.item.volumeInfo.authors || "Author Name"}
-        </p>
+      <p
+        numberOfLines={1}
+        ellipsizemode="tail"
+        className="truncate"
+        maxlength="4"
+      >
+        Author: {props.item.volumeInfo.authors || "Author Name"}
+      </p>
 
-        <p numberOfLines={1} ellipsizemode="tail" vmaxlength="8" className="truncate">
-          Title: {props.item.volumeInfo.title || "Title Name"}
-        </p>
+      <p
+        numberOfLines={1}
+        ellipsizemode="tail"
+        vmaxlength="8"
+        className="truncate"
+      >
+        Title: {props.item.volumeInfo.title || "Title Name"}
+      </p>
     </div>
   );
 }
