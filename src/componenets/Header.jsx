@@ -5,7 +5,7 @@ export function Header(props) {
 
   return (
     <>
-      <div className="center">
+      <div className="center" borderRadius={30} resizeMode="cover">
         <input
           onChange={(e) => setUsersSearch(e.target.value.trim())}
           type={"text"}
@@ -18,7 +18,7 @@ export function Header(props) {
         <br />
         <br />
       </div>
-      <button 
+      <button
         disabled={!usersSearch}
         className=""
         onClick={() => {

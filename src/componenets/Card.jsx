@@ -9,7 +9,7 @@ export function Card(props) {
   }
 
   return (
-    <div className="centered">
+    <div className="centered" resizeMode="cover" borderRadius={20}>
       <img
         resizeMode="cover"
         borderRadius={20}
@@ -24,7 +24,7 @@ export function Card(props) {
         style={{ backgroundColor: "rgba(251, 251, 1, 0.2)" }}
       ></div>
       <ul>
-        <li numberOfLines={1} ellipsizemode="tail" className="liFont">
+        <li numberOfLines={1} ellipsizemode="tail" className="">
           Author: {props.item.volumeInfo.authors || "Author Name"}
         </li>
 
