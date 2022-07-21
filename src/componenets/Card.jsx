@@ -17,7 +17,8 @@ export function Card(props) {
         ("square bg-primary rounded",
         "square bg-primary rounded-top",
         "square bg-primary rounded-end",
-        "square bg-primary rounded-bottom")
+        "square bg-primary rounded-bottom",
+        "card", "card:hover")
       }
     >
       <img
@@ -27,7 +28,7 @@ export function Card(props) {
           "square bg-primary rounded-end",
           "square bg-primary rounded-bottom",
           "square bg-primary rounded-start",
-          "square bg-primary rounded-circle")
+          "square bg-primary rounded-circle", "card","container")
         }
         width="200px"
         height="300px"
