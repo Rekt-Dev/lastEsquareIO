@@ -20,7 +20,7 @@ export function Header(props) {
       </div>
       <button
         disabled={!usersSearch}
-        className=""
+        className="centered"
         onClick={() => {
           props.search(usersSearch.trim());
         }}
