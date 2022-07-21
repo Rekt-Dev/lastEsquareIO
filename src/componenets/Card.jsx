@@ -1,5 +1,16 @@
 export function Card(props) {
   function dataOrDefault() {
+    const shortenText = (str, len) => {
+      if (str.length > len) {
+        if (len <= 10) {
+          return str.slice(0, len - 10) + "...";
+        } else {
+          return str.slice(0, len) + "...";
+        }
+      } else {
+        return str;
+      }
+    };
     const defaultLink =
       "https://books.google.co.il/googlebooks/images/no_cover_thumb.gif";
 
@@ -25,15 +36,13 @@ export function Card(props) {
         style={{ backgroundColor: "rgba(251, 251, 1, 0.2)" }}
       ></div>
       <ul>
-        <li numberOfLines={1} ellipsizemode="tail" className="" maxlength="8">
+        <p numberOfLines={1} ellipsizemode="tail" className="" maxlength="4">
           Author: {props.item.volumeInfo.authors || "Author Name"}
-        </li>
+        </p>
 
-        <li numberOfLines={1} ellipsizemode="tail"
-        vmaxlength="8"
-        >
+        <p numberOfLines={1} ellipsizemode="tail" vmaxlength="8">
           Title: {props.item.volumeInfo.title || "Title Name"}
-        </li>
+        </p>
       </ul>
     </div>
   );
