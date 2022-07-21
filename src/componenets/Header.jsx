@@ -18,7 +18,7 @@ export function Header(props) {
       <br />
 
       <button
-        className="center"
+        className="centered"
         onClick={() => {
           props.search(usersSearch);
         }}
