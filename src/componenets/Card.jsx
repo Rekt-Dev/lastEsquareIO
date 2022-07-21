@@ -12,7 +12,7 @@ export function Card(props) {
         />
 
         <div
-          numberOfLines={2}
+          numberOfLines={1}
           className="center"
           style={{ backgroundColor: "rgba(251, 251, 1, 0.2)" }}
         ></div>
