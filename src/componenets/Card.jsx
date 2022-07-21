@@ -16,19 +16,17 @@ export function Card(props) {
       className={
         ("square bg-primary rounded",
         "square bg-primary rounded-top",
-        "square bg-primary rounded-end",
         "square bg-primary rounded-bottom",
-        "card", "card:hover")
+        "card-hover")
       }
     >
       <img
         className={
           ("square bg-primary rounded",
           "square bg-primary rounded-top",
-          "square bg-primary rounded-end",
-          "square bg-primary rounded-bottom",
           "square bg-primary rounded-start",
-          "square bg-primary rounded-circle", "card","container")
+          "square bg-primary rounded-circle",
+          "card:hover")
         }
         width="200px"
         height="300px"

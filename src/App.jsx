@@ -3,6 +3,11 @@ import React, { useState } from "react";
 import "./App.css";
 import { Header } from "./componenets/Header";
 import { Card } from "./componenets/Card";
+// Bootstrap CSS
+import "bootstrap/dist/css/bootstrap.min.css";
+// Bootstrap Bundle JS
+import "bootstrap/dist/js/bootstrap.bundle.min";
+
 //import requestOptions from "./services/requestOptions"
 /* const MockCard = (props) => {
   return (
