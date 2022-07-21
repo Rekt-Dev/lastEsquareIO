@@ -14,7 +14,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
 }
 
 code {
@@ -39,9 +38,9 @@ code {
 
 body {
   font-family: "Source Sans Pro", sans-serif;
-  color: white;
+  color: rgb(39, 24, 66);
   font-weight: 300;
-  background: #50a3a2;
+  background: #e4ebea;
   width: 100%;
   height: 100%;
 }
