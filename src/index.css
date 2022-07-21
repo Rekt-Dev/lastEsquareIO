@@ -27,6 +27,7 @@ code {
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 
 * {
@@ -60,7 +61,7 @@ input {
   border: 1px solid rgba(148, 22, 22, 0.4);
   background-color: rgba(252, 252, 252, 0.2);
   width: 250px;
-  border-radius: 3px;
+  border-radius: 20px;
   font-family: "Source Sans Pro", sans-serif;
   padding: 10px 15px;
   margin: 0 auto 10px auto;
@@ -74,6 +75,8 @@ input {
 button {
   appearance: none;
   outline: 0;
+  border-radius: 20px;
+
   background-color: white;
   border: 0;
   padding: 10px 1px;
