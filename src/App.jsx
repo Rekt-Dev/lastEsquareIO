@@ -28,7 +28,7 @@ import { Card } from "./componenets/Card";
           ? jsonData.items.map((singleBook, index) => (
               <Card key={index} item={singleBook} />
             ))
-          : "Nada to show"}
+          : "Search the world's most comprehensive index of full-text books."}
       </div>
 
       <br />
