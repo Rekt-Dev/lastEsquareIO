@@ -4,22 +4,20 @@ export function Header(props) {
   const [usersSearch, setUsersSearch] = useState("");
 
   return (
-    <div className="center">
-      <input
-        onChange={(e) => setUsersSearch(e.target.value)}
-        type={"text"}
-        placeholder={"Enter Your Search Here..."}
-      />
+    <>
+      <div className="center">
+        <input
+          onChange={(e) => setUsersSearch(e.target.value)}
+          type={"text"}
+          placeholder={"Enter Your Search Here..."}
+        />
 
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+        <br />
+
+        <br />
+        <br />
+        <br />
+      </div>
       <button
         className=""
         onClick={() => {
@@ -28,6 +26,10 @@ export function Header(props) {
       >
         search
       </button>
-    </div>
+      <br />
+      <br />
+      <br />
+      <br />
+    </>
   );
 }
