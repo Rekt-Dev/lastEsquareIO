@@ -12,9 +12,23 @@ export function Card(props) {
   }
 
   return (
-    <div className="" resizeMode="cover" borderRadius={20}>
+    <div
+      className={
+        ("square bg-primary rounded",
+        "square bg-primary rounded-top",
+        "square bg-primary rounded-end",
+        "square bg-primary rounded-bottom")
+      }
+    >
       <img
-        className="rounded-top"
+        className={
+          ("square bg-primary rounded",
+          "square bg-primary rounded-top",
+          "square bg-primary rounded-end",
+          "square bg-primary rounded-bottom",
+          "square bg-primary rounded-start",
+          "square bg-primary rounded-circle")
+        }
         width="200px"
         height="300px"
         resizeMode="cover"
